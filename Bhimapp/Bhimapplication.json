@@ -1,0 +1,9 @@
+{
+"PLATFORMNAME":  "Android",
+"DEVICENAME":  "iQOO Neo6",
+"AUTOMATIONNAME": "UiAutomator2",
+"UDID": "10BCA116FY000EE",
+"appPackage": "in.org.npci.upiapp",
+"appActivity": ".HomeActivity",
+"noReset":"true"
+}
