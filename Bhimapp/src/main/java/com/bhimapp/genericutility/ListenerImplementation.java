@@ -25,7 +25,7 @@ public class ListenerImplementation implements ITestListener {
 public void onTestStart(ITestResult result) {
 	String methodname=result.getMethod().getMethodName();
 	//System.out.println(methodname+"...........START");
-	Reporter.log(methodname);
+	
 	test=report.createTest(methodname);
 	
 		
@@ -46,32 +46,22 @@ public void onTestStart(ITestResult result) {
 		System.out.println(screenshotname+"............the method got failed");
 		test.log(Status.FAIL, screenshotname+"...........Failed");
 		test.log(Status.INFO,result.getThrowable());
-		TakesScreenshot ts=(TakesScreenshot)BaseClass.ssdriver;
-	File src=ts.getScreenshotAs(OutputType.FILE);
+		//TakesScreenshot ts=(TakesScreenshot)BaseClass.ssdriver;
+	//File src=ts.getScreenshotAs(OutputType.FILE);
 	String localdatetime=LocalDateTime.now().toString().replace(" ", "_").replace(":", "_");
 
 	
 	File trg=new File(".\\Screenshottake\\"+" "+localdatetime+screenshotname+".png");
 	String path=trg.getAbsolutePath();
 	
-	try {
-		
-		
-		FileUtils.copyFile(src, trg);
-		test.addScreenCaptureFromPath(path);
-	} 
-	catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+//	try {
+//		
+//		
+//		//FileUtils.copyFile(src, trg);
+//		test.addScreenCaptureFromPath(path);
+//	} 
 	}
 	
-	
-		
-		
-		
-		
-	}
-
 	public void onTestSkipped(ITestResult result) {
 		String methodname=result.getMethod().getMethodName();
 		//System.out.println(methodname+"...........skipp");

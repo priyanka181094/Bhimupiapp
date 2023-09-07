@@ -9,7 +9,7 @@ public class Jsonutility {
 	
 	public String  readdata(String key)throws Throwable
 	{
-		FileReader reader=new FileReader(IPathConstant.jsonfilepath);
+		FileReader reader=new FileReader(IPathConstant.commonDataFilePath );
 		JSONParser jp=new JSONParser();
 		Object obj=jp.parse(reader);
 		HashMap map=(HashMap )obj;

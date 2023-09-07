@@ -79,12 +79,12 @@ public class SendMoneyPage {
 	{
 		textfielndname.sendKeys(name);
 	}
-	public void filltextfieldApp(ExcelUtility eutil)throws Throwable
-	{
-		enteramount.sendKeys(eutil.fetchDatafromExcel("Testdata", 5, 8));
-		enteremarks.sendKeys(eutil.fetchDatafromExcel("Testdata", 5, 9));
-		
-	}
+//	public void filltextfieldApp(ExcelUtility eutil)throws Throwable
+//	{
+//		enteramount.sendKeys(eutil.fetchDatafromExcel("Testdata", 5, 8));
+//		enteremarks.sendKeys(eutil.fetchDatafromExcel("Testdata", 5, 9));
+//		
+//	}
 	public void sendbuttonApp()
 	{
 		sendoption.click();
@@ -109,9 +109,9 @@ public class SendMoneyPage {
 		String message=transaction.getText();
 		return message;
 	}
-	public void selectnamefromdropdown(ExcelUtility eutil)throws Throwable
-	{
-		driver.findElement(By.xpath("//android.widget.TextView[@text='"+eutil.fetchDatafromExcel("Testdata", 5, 5)+"']")).click();
-	}
+//	public void selectnamefromdropdown(ExcelUtility eutil)throws Throwable
+//	{
+//		driver.findElement(By.xpath("//android.widget.TextView[@text='"+eutil.fetchDatafromExcel("Testdata", 5, 5)+"']")).click();
+//	}
 
 }

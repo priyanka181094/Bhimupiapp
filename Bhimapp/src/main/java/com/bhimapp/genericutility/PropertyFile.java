@@ -8,9 +8,9 @@ import java.util.Properties;
 public class PropertyFile {
 	
 
-	public String propertyfileutility(String key) throws Throwable
+	public String readDataFromPropertyFile(String key) throws Throwable
 	{
-		FileInputStream fis=new FileInputStream("C:\\Users\\Priyanka Ghosh\\OneDrive\\Desktop\\appiumtext.txt");
+		FileInputStream fis=new FileInputStream(IPathConstant.commonDataFilePath);
 		Properties pro=new Properties();
 		pro.load(fis);
 		String value=pro.getProperty(key);

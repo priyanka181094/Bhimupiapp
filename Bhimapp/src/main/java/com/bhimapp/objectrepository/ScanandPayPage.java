@@ -44,12 +44,12 @@ public class ScanandPayPage {
 		choosephoto.click();
 		
 	}
-	public void enteramountdetailsApp(ExcelUtility eutil)throws Throwable
-	{
-		enteramount.sendKeys(eutil.getDataFromExcel("Testdata","sendMoneyThroughScanner","Amount"));
-		enterremark.sendKeys(eutil.getDataFromExcel("Testdata","sendMoneyThroughScanner","Remarks"));
-		clickonsend.click();
-	}
+//	public void enteramountdetailsApp(ExcelUtility eutil)throws Throwable
+//	{
+//		enteramount.sendKeys(eutil.getDataFromExcel("Testdata","sendMoneyThroughScanner","Amount"));
+//		enterremark.sendKeys(eutil.getDataFromExcel("Testdata","sendMoneyThroughScanner","Remarks"));
+//		clickonsend.click();
+//	}
 	public String fetchpagetitle()
 	{
 		String pagetitle=scanpagetitle.getText();

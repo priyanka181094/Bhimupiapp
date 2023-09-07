@@ -86,10 +86,10 @@ public class HomePage {
 	{
 		sendfeedbackoption.click();
 	}
-	public void choosefromfav(ExcelUtility eutil)throws Throwable
-	{
-		driver.findElement(By.xpath("//android.widget.TextView[contains(@text,'"+eutil.fetchDatafromExcel("Sheet1",1,0) +"')]")).click();
-	}
+//	public void choosefromfav(ExcelUtility eutil)throws Throwable
+//	{
+//		driver.findElement(By.xpath("//android.widget.TextView[contains(@text,'"+eutil.fetchDatafromExcel("Sheet1",1,0) +"')]")).click();
+//	}
 	public String verifypagetitleAppp()
 	{
 	String title=	pagetitle.getText();

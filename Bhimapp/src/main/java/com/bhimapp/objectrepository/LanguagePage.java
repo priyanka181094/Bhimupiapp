@@ -28,17 +28,17 @@ public class LanguagePage {
 	{
 		backbutton.click();
 	}
-	public void chooselanguageApp(ExcelUtility eutil) throws Throwable
-	{
-		WebElement wb=driver.findElement(By.xpath("//android.widget.TextView[contains(@text,'"+eutil.getDataFromExcel("Testdata","ChangelanguageTest", "Language")+"')]"));
-		String language=wb.getText();
-		if(language.contains(eutil.getDataFromExcel("Testdata","ChangelanguageTest", "Language")))
-		{
-		//select the language
-		wb.click();
-		}
-		
-	}
+//	public void chooselanguageApp(ExcelUtility eutil) throws Throwable
+//	{
+//		WebElement wb=driver.findElement(By.xpath("//android.widget.TextView[contains(@text,'"+eutil.getDataFromExcel("Testdata","ChangelanguageTest", "Language")+"')]"));
+//		String language=wb.getText();
+//		if(language.contains(eutil.getDataFromExcel("Testdata","ChangelanguageTest", "Language")))
+//		{
+//		//select the language
+//		wb.click();
+//		}
+//		
+//	}
 	public String changelanguageApp()
 	{
 		String title=languagetitle.getText();
